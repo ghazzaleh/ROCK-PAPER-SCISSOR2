@@ -1,0 +1,76 @@
+body {
+  background-color: antiquewhite;
+  background-image: url(./image/Untitled-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  color: rgb(160, 20, 20);
+  margin-bottom: 20px; /* فاصله از پایین هدر */
+}
+
+#handContainer {
+  display: flex;
+  justify-content: center; /* مرکز کردن تصاویر */
+  align-items: center; /* تراز کردن عمودی */
+  margin: 20px 0; /* فاصله از بالا و پایین */
+}
+
+#hand1,
+#hand2 {
+  margin: 0 20px; /* فاصله بین دو تصویر */
+}
+
+#img1,
+#img2 {
+  width: 200px; /* تنظیم عرض تصاویر */
+  height: auto; /* حفظ نسبت ابعاد */
+}
+
+#buttonContainer {
+  display: flex;
+  justify-content: center; /* مرکز کردن دکمه‌ها */
+  margin: 20px 0; /* فاصله از بالا و پایین دکمه‌ها */
+}
+
+button {
+  height: 80px;
+  width: 140px;
+  font-size: x-large;
+  font-weight: bold;
+  background-color: rgb(160, 20, 20);
+  color: floralwhite;
+  border: 4px solid floralwhite;
+  border-radius: 44px;
+  cursor: pointer;
+  margin: 0 10px; /* فاصله بین دکمه‌ها */
+}
+
+#start {
+  background-color: rgb(28, 117, 190);
+  display: block;
+  margin: 20px auto; /* مرکز کردن دکمه شروع */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  button {
+    width: 100px;
+    height: 60px;
+    font-size: large;
+  }
+
+  #handContainer {
+    flex-direction: column; /* نمایش تصاویر به صورت عمودی در صفحه‌های کوچک */
+  }
+
+  #img1,
+  #img2 {
+    width: 100px; /* کاهش اندازه تصاویر در صفحه‌های کوچک */
+  }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>ROCK PAPER SCISSOR</title>
+</head>
+<body>
+    <h1 id="heading">ROCK PAPER SCISSOR</h1>
+    <div id="handContainer">
+        <div id="hand1">
+            <img id="img1" src="image/rock.png" alt="Rock" /> <!-- نمایش پیش‌فرض -->
+        </div>
+        <div id="hand2">
+            <img id="img2" src="image/rock.png" alt="Rock" /> <!-- نمایش پیش‌فرض -->
+        </div>
+    </div>
+    
+    <div id="buttonContainer" style="visibility: hidden;">
+        <button type="button" onclick="game(0)" id="rock">Rock</button>
+        <button type="button" onclick="game(1)" id="paper">Paper</button>
+        <button type="button" onclick="game(2)" id="scissors">Scissors</button>
+    </div>
+
+    <button type="button" onclick="start()" id="start">Start</button>
+</body>
+</html>
